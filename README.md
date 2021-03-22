@@ -3,12 +3,12 @@
 
 ## Instale as dependências e as bibliotecas
 
-npm install --save express
-npm install --save express-handlebars
-npm install --save body-parser
-npm install --save mongoose
+1. npm install --save express
+2. npm install --save express-handlebars
+3. npm install --save body-parser
+4. npm install --save mongoose
 
-Instalar o mongoDB
+**Instale o mongoDB**
 
 ## Foi utilizado
 * Express.js - framework para aplicações web para Node.js 
