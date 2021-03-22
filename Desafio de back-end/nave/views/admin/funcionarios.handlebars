@@ -1,0 +1,23 @@
+<h2>Lista de Funcionarios</h2>
+<hr>
+<a href="/admin/funcionarios/add"><button class="btn btn-success">Novo Funcionario</button></a>
+
+
+{{#each funcionarios}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4>Nome: {{name}}</h6>
+            <h6>Data de nascimento: {{birthdate}}</h6>
+            <h6>Data de admissão: {{admission_date}}</h6>
+            <h5>Cargo: {{job_role}}</h5>
+            <hr>
+            <h5>Projeto: {{projeto.nome}}</h5>
+            <a href="/admin/funcionarios/edit/{{_id}}"><button class="btn btn-success mt-3">Editar funcionario</button></a>
+            <a href="/admin/funcionarios/deletar/{{_id}}"><button class="btn btn-danger mt-3">Deletar funcionario</button></a>
+        
+        </div>
+    </div>
+    
+{{else}}
+    <h4>Nenhum funcionario registrado</h4>
+{{/each}}
